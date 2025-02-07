@@ -24,7 +24,7 @@ ENV REACT_APP_API_BASE_URL=${REACT_APP_API_BASE_URL}
 RUN yarn run build
 
 #### Stage 2: Serve the React application from Nginx
-FROM nginx:1.17.0-alpine
+FROM nginx:1.27.4-alpine
 
 # Arguments
 ARG BACKEND_NAME
